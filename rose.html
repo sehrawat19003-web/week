@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rose Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;600&family=Great+Vibes&family=Manrope:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="rose-day">
+  <div class="ambient"></div>
+  <main class="page-shell">
+    <a class="back" href="index.html">← Back to Home</a>
+    <h1>Rose Day</h1>
+    <div class="page-card">
+      <h2>Big Rose Surprise</h2>
+      <p class="muted">Tap the rose and let the petals dance everywhere.</p>
+      <div class="rose-stage" aria-hidden="true">
+        <div class="rose" id="bigRose">
+          <div class="petal p1"></div>
+          <div class="petal p2"></div>
+          <div class="petal p3"></div>
+          <div class="petal p4"></div>
+          <div class="petal p5"></div>
+          <div class="petal p6"></div>
+          <div class="center"></div>
+          <div class="stem"></div>
+          <div class="leaf l1"></div>
+          <div class="leaf l2"></div>
+        </div>
+      </div>
+      <div class="rose-caption">For Arpit</div>
+      <div class="controls">
+        <button class="primary" id="scatterRose">Shake the Rose</button>
+      </div>
+    </div>
+    <div class="page-card">
+      <p>Each rose is a promise that my love will always bloom for you.</p>
+    </div>
+
+    <div class="page-card">
+      <h2>Rose Day Memory</h2>
+      <div class="photo-card rose-photo">
+        <img src="assets/rose-day.jpg" alt="Rose day memory" />
+        <div class="photo-caption">My Rose, My Love</div>
+      </div>
+    </div>
+    <div class="page-card">
+      <h2>Rose Day Song</h2>
+      <div class="player">
+        <iframe
+          src="https://www.youtube.com/embed/QkTF73wc_KM?rel=0"
+          title="Rose Day video"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+          style="width:100%;height:100%;border:0;min-height:240px;"
+        ></iframe>
+      </div>
+    </div>
+
+    <section class="clouds">
+      <h2>Heart Clouds</h2>
+      <p class="muted">Tap the clouds and it rains hearts.</p>
+      <div class="cloud-grid">
+        <button class="cloud" data-cloud="1">Cloud One</button>
+        <button class="cloud" data-cloud="2">Cloud Two</button>
+        <button class="cloud" data-cloud="3">Cloud Three</button>
+      </div>
+    </section>
+  </main>
+  <div class="petal-field" id="petalField"></div>
+  <div class="rain-field" id="rainField"></div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

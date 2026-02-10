@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Propose Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;600&family=Great+Vibes&family=Manrope:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient"></div>
+  <main class="page-shell">
+    <a class="back" href="index.html">← Back to Home</a>
+    <h1>Propose Day</h1>
+
+    <section class="page-card proposal" id="proposalStage1">
+      <h2 class="big-line">Vanshika loves Arpit</h2>
+      <p class="muted">Will you accept this love story?</p>
+      <div class="choice-row">
+        <button class="primary" id="acceptOne">Accept</button>
+        <button class="ghost reject" disabled>Reject</button>
+      </div>
+    </section>
+
+    <section class="page-card proposal hidden" id="proposalStage2">
+      <h2>Celebration of Us</h2>
+      <p>Arpit + Vanshika = love that never fades.</p>
+      <p class="muted">I (Vanshika) met you when I was 13 years old and you were 20 years old — my baby boy Arpit.</p>
+    </section>
+
+    <section class="page-card proposal hidden" id="proposalLetter">
+      <h2>Love Letter</h2>
+      <p class="muted">Click the ribbon to open the letter.</p>
+      <div class="love-letter" id="loveLetter">
+        <div class="lamp">💡</div>
+        <div class="floral-border">
+          <span>🌹</span><span>🌸</span><span>🌷</span><span>🌺</span><span>🌹</span><span>🌸</span>
+          <span>🌷</span><span>🌺</span><span>🌹</span><span>🌸</span><span>🌷</span><span>🌺</span>
+        </div>
+        <button class="ribbon" id="letterRibbon" aria-label="Open love letter"></button>
+        <div class="letter-paper">
+          <h3>My Arpit</h3>
+          <p>You are my heart, my smile, and my forever home.</p>
+          <p>Every day with you feels like a new promise of love.</p>
+          <p>Always yours,</p>
+          <p class="signature">Vanshika</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-card proposal hidden" id="proposalSong">
+      <h2>Our Video</h2>
+      <div class="player full-video">
+        <iframe
+          src="https://www.youtube.com/embed/3CVGc7rFXtM?rel=0"
+          title="Propose Day video"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+          style="width:100%;height:100%;border:0;"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="page-card proposal hidden" id="proposalStage3">
+      <h2>Will you marry me?</h2>
+      <p class="muted">A question asked again with a whole heart.</p>
+      <div class="choice-row">
+        <button class="primary" id="acceptTwo">Accept</button>
+        <button class="ghost reject" disabled>Reject</button>
+      </div>
+    </section>
+
+    <section class="page-card proposal hidden" id="proposalStage4">
+      <h2>Arpit weds Vanshika</h2>
+      <div class="wedding-card">
+        <div class="wedding-title">Wedding Invitation</div>
+        <div class="wedding-names">Arpit & Vanshika</div>
+        <div class="wedding-line">Together forever, with love.</div>
+      </div>
+    </section>
+
+    <section class="page-card proposal hidden" id="proposalStage5">
+      <h2>Our Love Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-step">Fiancée (Current Stage)</div>
+        <div class="timeline-step">Marriage</div>
+        <div class="timeline-step">Having Kids</div>
+        <div class="timeline-step">Having Family</div>
+        <div class="timeline-step">Grow Old Together</div>
+      </div>
+      <p class="muted highlight-line">And this was also my dream: I want to die in your arms.</p>
+      <div class="kids-section">
+        <h3>Our Kids</h3>
+        <p class="muted">Tap a kid and shower kisses.</p>
+        <div class="kid-buttons">
+          <button class="kid-button">Little Sunshine</button>
+          <button class="kid-button">Little Star</button>
+          <button class="kid-button">Little Rose</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="confetti-field" id="confettiField"></div>
+  <div class="emoji-field" id="kidField"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arpit, My Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;500;700&family=Great+Vibes&family=Manrope:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="home">
+  <div class="ambient"></div>
+
+  <header class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Valentine Week for</p>
+      <h1>Arpit, <span>My Love</span></h1>
+      <p class="subtitle">Every beat, every day, every promise — all yours.</p>
+      <div class="quote">“You are my today and all of my tomorrows.”</div>
+      <div class="controls">
+        <button class="primary" id="playHome" data-link="https://youtu.be/1mGEhLpfXmg?si=BKgcVA6GR7ksIt5S">Play Our Song</button>
+        <button class="ghost" id="scatterRose">Shake the Rose</button>
+      </div>
+    </div>
+
+    <div class="rose-stage" aria-hidden="true">
+      <div class="rose" id="bigRose">
+        <div class="petal p1"></div>
+        <div class="petal p2"></div>
+        <div class="petal p3"></div>
+        <div class="petal p4"></div>
+        <div class="petal p5"></div>
+        <div class="petal p6"></div>
+        <div class="center"></div>
+        <div class="stem"></div>
+        <div class="leaf l1"></div>
+        <div class="leaf l2"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="photo-section">
+    <div class="photo-card">
+      <img src="assets/home-love.jpg" alt="My love of life" />
+      <div class="photo-caption">My Love of Life</div>
+    </div>
+  </section>
+
+  <section class="song-card">
+    <div>
+      <h2>Our Home Song</h2>
+      <p class="muted">A gentle start to the week of love.</p>
+    </div>
+    <div class="song-link">
+      <a class="primary link-button" href="https://youtu.be/1mGEhLpfXmg?si=BKgcVA6GR7ksIt5S" target="_blank" rel="noopener">Open the Song</a>
+    </div>
+  </section>
+
+  <section class="days">
+    <h2>Valentine Week</h2>
+    <p class="muted">Only today’s pages are open — the rest bloom day by day.</p>
+    <div class="day-grid" id="dayGrid">
+      <a class="day-card" data-day="rose" href="rose.html">
+        <span>Rose Day</span>
+        <em>Feb 7</em>
+      </a>
+      <a class="day-card" data-day="propose" href="propose.html">
+        <span>Propose Day</span>
+        <em>Feb 8</em>
+      </a>
+      <a class="day-card" data-day="chocolate" href="chocolate.html">
+        <span>Chocolate Day</span>
+        <em>Feb 9</em>
+      </a>
+      <a class="day-card" data-day="teddy" href="teddy.html">
+        <span>Teddy Day</span>
+        <em>Feb 10</em>
+      </a>
+      <a class="day-card" data-day="promise" href="promise.html">
+        <span>Promise Day</span>
+        <em>Feb 11</em>
+      </a>
+      <a class="day-card" data-day="hug" href="hug.html">
+        <span>Hug Day</span>
+        <em>Feb 12</em>
+      </a>
+      <a class="day-card" data-day="kiss" href="kiss.html">
+        <span>Kiss Day</span>
+        <em>Feb 13</em>
+      </a>
+      <a class="day-card" data-day="valentine" href="valentines.html">
+        <span>Valentine’s Day</span>
+        <em>Feb 14</em>
+      </a>
+    </div>
+  </section>
+
+  <section class="clouds">
+    <h2>Heart Clouds</h2>
+    <p class="muted">Tap the clouds and it rains hearts.</p>
+    <div class="cloud-grid">
+      <button class="cloud" data-cloud="1">Cloud One</button>
+      <button class="cloud" data-cloud="2">Cloud Two</button>
+      <button class="cloud" data-cloud="3">Cloud Three</button>
+    </div>
+  </section>
+
+  <div class="petal-field" id="petalField"></div>
+  <div class="rain-field" id="rainField"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
